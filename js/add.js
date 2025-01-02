@@ -17,6 +17,15 @@ function generateEquation() {
     document.getElementById("num1").innerHTML = num1;
     document.getElementById("num2").innerHTML = num2;
 
+    do {
+        dummyAnswer1 = Math.floor(Math.random() * 10);
+    } while (dummyAnswer1 === answer);
+
+    do {
+        dummyAnswer2 = Math.floor(Math.random() * 10);
+    } while (dummyAnswer2 === answer || dummyAnswer2 === dummyAnswer1);
+
+
     allAnswers = [answer, dummyAnswer1, dummyAnswer2];
 
     for (i = allAnswers.length; i--;) {
