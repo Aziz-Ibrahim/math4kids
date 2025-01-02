@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>M4K | Addition</title>
 </head>
@@ -16,13 +17,17 @@
 
     <header>
         <div class="container">
-            <h1>MATH 4 KIDS</h1>
-            <ul>
-                <li class="active"><a href="index.html">Addition</a></li>
-                <li><a href="subtraction.html">Substraction</a></li>
-                <li><a href="multiplication.html">multiplication</a></li>
-                <li><a href="division.html">division</a></li>
-            </ul>
+            <div class="nav">
+                <h1><span><i class="fa fa-trophy" aria-hidden="true"></i></span> MATH 4 KIDS</h1>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="index.html">Addition</a></li>
+                        <li><a href="subtraction.html">Substraction</a></li>
+                        <li><a href="multiplication.html">multiplication</a></li>
+                        <li><a href="division.html">division</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -35,9 +40,15 @@
             <p style="color: #EA3546;">?</p>
         </div>
         <div class="answer-options">
-            <p id="option1">1</p>
-            <p id="option2">2</p>
-            <p id="option3">3</p>
+            <div class="options" style="background-color: #F9C80E;">
+                <p id="option1">1</p>
+            </div>
+            <div class="options" style="background-color: #F86624;">
+                <p id="option2">2</p>
+            </div>
+            <div class="options" style="background-color: #43BCCD;">
+                <p id="option3">3</p>
+            </div>
         </div>
     </div>
     <script src="js/add.js"></script>
