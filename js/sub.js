@@ -12,11 +12,15 @@ function generateEquation() {
         allAnswers = [],
         switchAnswers = [];
 
-    answer = eval(num1 - num2);
-
-    document.getElementById("num1").innerHTML = num1;
-    document.getElementById("num2").innerHTML = num2;
-
+    if (num1 > num2) {
+        answer = eval(num1 - num2);
+        document.getElementById("num1").innerHTML = num1;
+        document.getElementById("num2").innerHTML = num2;
+    } else {
+        answer = eval(num2 - num1);
+        document.getElementById("num1").innerHTML = num2;
+        document.getElementById("num2").innerHTML = num1;
+    }
     allAnswers = [answer, dummyAnswer1, dummyAnswer2];
 
     for (i = allAnswers.length; i--;) {
