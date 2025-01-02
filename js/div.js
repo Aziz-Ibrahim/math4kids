@@ -8,6 +8,11 @@ function generateEquation() {
     let num1 = Math.floor(Math.random() * 13);
     let num2 = Math.floor(Math.random() * 13);
 
+    // Prevent division by zero by ensuring num2 is not zero
+    while (num2 === 0) {
+        num2 = Math.floor(Math.random() * 13);
+    }
+
     // Ensure num1 is a multiple of num2
     num1 = num2 * (Math.floor(Math.random() * 13));
 
@@ -39,6 +44,7 @@ function generateEquation() {
     option2.innerHTML = switchAnswers[1];
     option3.innerHTML = switchAnswers[2];
 };
+
 
 
 option1.addEventListener("click", function () {
