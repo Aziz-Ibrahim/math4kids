@@ -6,44 +6,55 @@
 }
 
 body {
-    font-family: "Luckiest Guy", serif;
-    background-color: #e6e6ea;
-    font-style: normal;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #E6E6EA;
+}
+
+header {
+    background: #FE4A49;
 }
 
 .container {
-    padding: 20px;
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
     overflow: hidden;
-    background-color: #fe4a49;
+    background: #FE4A49;
+    color: #fff;
+    padding: 20px 0;
 }
 
-.container h1 {
+.nav h1 {
+    font-size: 2rem;
     float: left;
-    margin-left: 10%;
-    color: white;
 }
 
-.container ul {
+nav {
+    float: right;
+}
+
+nav ul {
     list-style-type: none;
-    font-size: 20px;
-    margin-left: 60%;
 }
 
-.container li {
-    margin-top: 10px;
+nav li {
+    font-size: 1.3rem;
+    margin-top: 5px;
     float: left;
-    padding: 0 20px 0 20px;
+    padding: 0 15px;
 }
 
-.container a {
+nav a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 .active a::after {
-    content: '__';
-    background-color: white;
+    content: '-';
     font-size: 4px;
+    background-color: white;
     display: block;
 }
 
@@ -53,14 +64,15 @@ body {
 }
 
 .equation {
-    font-size: 100px;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    font-size: 16vw;
+    background: #fff;
     border-radius: 3px;
     text-align: center;
-    padding-top: 15%;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px 10px 0px 10px;
 }
 
 .equation p {
@@ -69,45 +81,18 @@ body {
 }
 
 .answer-options {
-    font-size: 100px;
+    font-size: 16vw;
     margin-right: 10px;
 }
 
-.answer-options p {
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    color: whitesmoke;
     border-radius: 3px;
     margin-top: 10px;
-    text-align: center;
-    width: 100%;
-}
-
-#option1 {
-    background-color: #F9C80E;
-    transition: 1s;
-}
-
-#option1:hover {
-    color: #F9C80E;
-    background-color: white;
-}
-
-#option2 {
-    background-color: #F86624;
-    transition: 1s;
-}
-
-#option2:hover {
-    color: #F86624;
-    background-color: white;
-}
-
-#option3 {
-    background-color: #43BCCD;
-    transition: 1s;
-}
-
-#option3:hover {
-    color: #43BCCD;
-    background-color: white;
+    color: #fff;
+    transition: 2s;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
 }
