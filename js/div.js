@@ -5,27 +5,21 @@ const option1 = document.getElementById("option1"),
 let answer = 0;
 
 function generateEquation() {
-    let num1 = Math.floor(Math.random() * 10) + 1,
-        num2 = Math.floor(Math.random() * 10) + 1,
-        dummyAnswer1 = Math.floor(Math.random() * 10) / 10,
-        dummyAnswer2 = Math.floor(Math.random() * 10),
-        allAnswers = [],
-        switchAnswers = [];
+    let num1 = Math.floor(Math.random() * 13);
+    let num2 = Math.floor(Math.random() * 13);
 
-    if (num1 > num2) {
-        answer = eval(num1 / num2);
-        document.getElementById("num1").innerHTML = num1;
-        document.getElementById("num2").innerHTML = num2;
-    } else {
-        answer = eval(num2 / num1);
-        document.getElementById("num1").innerHTML = num2;
-        document.getElementById("num2").innerHTML = num1;
-    }
+    // Ensure num1 is a multiple of num2
+    num1 = num2 * (Math.floor(Math.random() * 13));
 
+    let dummyAnswer1 = Math.floor(Math.random() * 13);
+    let dummyAnswer2 = Math.floor(Math.random() * 13);
+    let allAnswers = [];
+    let switchAnswers = [];
 
-    if (Number.isInteger(answer) == false) {
-        answer = answer.toFixed(1);
-    }
+    answer = num1 / num2;
+
+    document.getElementById("num1").innerHTML = num1;
+    document.getElementById("num2").innerHTML = num2;
 
     do {
         dummyAnswer1 = Math.floor(Math.random() * 10);
@@ -34,7 +28,6 @@ function generateEquation() {
     do {
         dummyAnswer2 = Math.floor(Math.random() * 10);
     } while (dummyAnswer2 === answer || dummyAnswer2 === dummyAnswer1);
-
 
     allAnswers = [answer, dummyAnswer1, dummyAnswer2];
 
@@ -46,6 +39,7 @@ function generateEquation() {
     option2.innerHTML = switchAnswers[1];
     option3.innerHTML = switchAnswers[2];
 };
+
 
 option1.addEventListener("click", function () {
     if (option1.innerHTML == answer) {
