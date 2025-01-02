@@ -114,3 +114,28 @@ nav a {
         font-size: 1rem;
     }
 }
+
+@media(max-width:480px) {
+    .nav h1 {
+        float: none;
+        text-align: center;
+    }
+
+    .equation p {
+        display: inline;
+        padding: 10px;
+    }
+
+    nav li {
+        font-size: .5rem;
+    }
+
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+
+    .answer-options {
+        margin-left: 10px;
+    }
+}
