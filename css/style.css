@@ -68,7 +68,7 @@ nav a {
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
-    font-size: 16vw;
+    font-size: 10vw;
     background: #fff;
     border-radius: 3px;
     text-align: center;
@@ -81,7 +81,7 @@ nav a {
 }
 
 .answer-options {
-    font-size: 16vw;
+    font-size: 10vw;
     margin-right: 10px;
 }
 
@@ -95,4 +95,22 @@ nav a {
     color: #fff;
     transition: 2s;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+}
+
+@media(max-width:768px) {
+    .nav h1 {
+        font-size: 1.5rem;
+        float: none;
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        font-size: 1rem;
+    }
 }
