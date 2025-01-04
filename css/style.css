@@ -119,19 +119,10 @@ header {
     color: white;
 }
 
-#option1:hover {
-    background-color: white;
-    color: #F9C80E;
-}
 
 #option2 {
     background-color: #F86624;
     color: white;
-}
-
-#option2:hover {
-    background-color: white;
-    color: #F86624;
 }
 
 
@@ -140,11 +131,24 @@ header {
     color: white;
 }
 
-#option3:hover {
-    background-color: white;
-    color: #43BCCD;
-}
+/* Media query for hover effect on displays that support hover */
+@media (hover: hover) {
+    #option1:hover {
+        background-color: white;
+        color: #F9C80E;
+    }
 
+
+    #option2:hover {
+        background-color: white;
+        color: #F86624;
+    }
+
+    #option3:hover {
+        background-color: white;
+        color: #43BCCD;
+    }
+}
 
 /* Media Queries */
 @media(max-width:768px) {
