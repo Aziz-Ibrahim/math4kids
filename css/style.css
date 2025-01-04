@@ -248,8 +248,8 @@ header {
 
     .equation p {
         display: inline;
-        font-size: 4rem;
-
+        position: relative;
+        padding: 10px;
     }
 
     .answer-options {
