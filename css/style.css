@@ -186,18 +186,34 @@ header {
 }
 
 @media(max-width:480px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .equation {
+        width: 94vw;
+        height: 50%;
+    }
 
     .equation p {
         display: inline;
-        padding: 10px;
-    }
+        font-size: 4rem;
 
-    .wrapper {
-        grid-template-columns: 100%;
-        grid-template-rows: 70% 30%;
     }
 
     .answer-options {
-        margin-left: 10px;
+        width: 94%;
+        height: 40%;
+        display: flex;
+        flex-direction: inherit;
+        justify-content: space-around;
+    }
+
+    .options {
+        height: 12vh;
+        margin: 0%;
     }
 }
