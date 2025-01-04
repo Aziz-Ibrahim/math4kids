@@ -1,3 +1,10 @@
+const toggleButton = document.getElementsByClassName('nav-toggle')[0]
+const navbarLinks = document.getElementsByClassName('nav-links')[0]
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+});
+
 const option1 = document.getElementById("option1"),
     option2 = document.getElementById("option2"),
     option3 = document.getElementById("option3"),
