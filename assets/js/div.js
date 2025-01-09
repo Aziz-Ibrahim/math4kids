@@ -58,24 +58,34 @@ option1.addEventListener("click", function () {
     if (option1.innerHTML == answer) {
         generateEquation();
     } else {
-        audio.play();
+        option1.classList.add("shake");
     }
+    option1.addEventListener('animationend', () => {
+        option1.classList.remove('shake');
+    });
 });
+
 
 option2.addEventListener("click", function () {
     if (option2.innerHTML == answer) {
         generateEquation();
     } else {
-        audio.play();
+        option2.classList.add("shake");
     }
+    option2.addEventListener('animationend', () => {
+        option2.classList.remove('shake');
+    });
 });
 
 option3.addEventListener("click", function () {
     if (option3.innerHTML == answer) {
         generateEquation();
     } else {
-        audio.play();
+        option3.classList.add("shake");
     }
+    option3.addEventListener('animationend', () => {
+        option3.classList.remove('shake');
+    });
 });
 
 generateEquation();
