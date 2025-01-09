@@ -13,16 +13,11 @@
     <meta property="og:description"
         content="Generate math equations and let kids solve problems in addition, subtraction, multiplication, and division. A great way to make math fun!">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>M4K | Division</title>
 </head>
 
 <body>
-
-    <audio id="wrong">
-        <source src="assets/audio/wrong.mp3" type="audio/mpeg">
-    </audio>
-
     <header>
         <nav class="navbar">
             <div class="title">
@@ -44,27 +39,29 @@
         </nav>
     </header>
 
-    <div class="wrapper">
-        <div class="equation">
-            <p id="num1" style="color: #F9C80E;">1</p>
-            <p style="color: #662E9B;">÷</p>
-            <p id="num2" style="color: #F86624;">1</p>
-            <p style="color: #43BCCD;">=</p>
-            <p style="color: #EA3546;">?</p>
+    <main>
+        <div class="wrapper">
+            <section class="equation">
+                <p id="num1">1</p>
+                <p id="operator">÷</p>
+                <p id="num2">1</p>
+                <p id="equals">=</p>
+                <p id="question-mark">?</p>
+            </section>
+            <section class="answer-options">
+                <div id="option1" class="options">
+                    <p>1</p>
+                </div>
+                <div id="option2" class="options">
+                    <p>2</p>
+                </div>
+                <div id="option3" class="options">
+                    <p>3</p>
+                </div>
+            </section>
         </div>
-        <div class="answer-options">
-            <div id="option1" class="options">
-                <p>1</p>
-            </div>
-            <div id="option2" class="options">
-                <p>2</p>
-            </div>
-            <div id="option3" class="options">
-                <p>3</p>
-            </div>
-        </div>
-    </div>
-    <script src="js/div.js"></script>
+    </main>
+    <script src="assets/js/div.js"></script>
 </body>
 
 </html>
