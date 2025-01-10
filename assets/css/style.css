@@ -100,7 +100,19 @@ header {
     padding-left: 10px;
 }
 
-/* Game pahe */
+.hero-text a {
+    background-color: #EA3546;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-text a:hover {
+    background-color: #e76e7a;
+}
+
+/* Game page */
 #game-mode-container {
     display: flex;
     flex-direction: row;
@@ -289,6 +301,7 @@ footer {
 
 /* Media Queries */
 @media(max-width:768px) {
+
     .wrapper {
         display: flex;
         flex-direction: column;
