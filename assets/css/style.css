@@ -15,6 +15,9 @@ body {
 header {
     background: #EA3546;
     color: white;
+    position: static;
+    top: 0;
+    width: 100%;
 }
 
 /* Nav Bar */
@@ -75,6 +78,29 @@ header {
 }
 
 /* Main */
+
+/* Home page */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+    color: #EA3546;
+    background-image: url('../images/hero-bg-img.jpg');
+    background-size: cover;
+}
+
+.hero-text h1,
+.hero-text p,
+.hero-text a {
+    font-size: 2rem;
+    margin: 1rem;
+    font-family: 'Luckiest Guy', cursive;
+    padding-left: 10px;
+}
+
+/* Game pahe */
 #game-mode-container {
     display: flex;
     flex-direction: row;
@@ -252,6 +278,9 @@ header {
 
 /* Footer */
 footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
     background: #EA3546;
     color: white;
     text-align: center;
