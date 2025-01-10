@@ -29,27 +29,30 @@ function generateEquation(mode) {
         answer = num1 + num2;
         operatorElement.textContent = "+";
     } else if (mode === "subtraction") {
-        answer = num1 - num2;
+        // Ensure no negative results
+        if (num1 > num2) {
+            answer = num1 - num2;
+            num1Element.textContent = num1;
+            num2Element.textContent = num2;
+        } else {
+            answer = num2 - num1;
+            num1Element.textContent = num2;
+            num2Element.textContent = num1;
+        }
         operatorElement.textContent = "-";
     } else if (mode === "multiplication") {
         answer = num1 * num2;
         operatorElement.textContent = "×";
     } else if (mode === "division") {
-        // Ensure num2 is not zero
+        // Ensure num2 is not zero and num1 is a multiple of num2
         while (num2 === 0) {
             num2 = Math.floor(Math.random() * 13);
         }
-
-        // Ensure num1 is a multiple of num2
         num1 = num2 * Math.floor(Math.random() * 13);
-
         answer = num1 / num2;
         operatorElement.textContent = "÷";
     }
 
-    // Update equation display
-    num1Element.textContent = num1;
-    num2Element.textContent = num2;
     questionMarkElement.textContent = "?";
 
     // Generate unique dummy answers
@@ -67,6 +70,7 @@ function generateEquation(mode) {
     option2.querySelector("p").textContent = allAnswers[1];
     option3.querySelector("p").textContent = allAnswers[2];
 }
+
 
 
 // Handle Option Click
