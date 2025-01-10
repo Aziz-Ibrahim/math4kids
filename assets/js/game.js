@@ -21,8 +21,8 @@ let answer = 0;
 
 // Generate New Equation
 function generateEquation(mode) {
-    const num1 = Math.floor(Math.random() * 13);
-    const num2 = Math.floor(Math.random() * 13);
+    let num1 = Math.floor(Math.random() * 13);
+    let num2 = Math.floor(Math.random() * 13);
     let dummyAnswer1, dummyAnswer2;
 
     if (mode === "addition") {
@@ -35,18 +35,24 @@ function generateEquation(mode) {
         answer = num1 * num2;
         operatorElement.textContent = "×";
     } else if (mode === "division") {
-        const dividend = num1 * num2; // Ensures exact division
-        answer = num1;
+        // Ensure num2 is not zero
+        while (num2 === 0) {
+            num2 = Math.floor(Math.random() * 13);
+        }
+
+        // Ensure num1 is a multiple of num2
+        num1 = num2 * Math.floor(Math.random() * 13);
+
+        answer = num1 / num2;
         operatorElement.textContent = "÷";
-        num1Element.textContent = dividend;
-        num2Element.textContent = num2;
     }
 
+    // Update equation display
     num1Element.textContent = num1;
     num2Element.textContent = num2;
     questionMarkElement.textContent = "?";
 
-    // Generate Unique Dummy Answers
+    // Generate unique dummy answers
     do {
         dummyAnswer1 = Math.floor(Math.random() * 20);
     } while (dummyAnswer1 === answer);
@@ -55,12 +61,13 @@ function generateEquation(mode) {
         dummyAnswer2 = Math.floor(Math.random() * 20);
     } while (dummyAnswer2 === answer || dummyAnswer2 === dummyAnswer1);
 
-    // Shuffle and Assign Options
+    // Shuffle and assign options
     const allAnswers = [answer, dummyAnswer1, dummyAnswer2].sort(() => Math.random() - 0.5);
     option1.querySelector("p").textContent = allAnswers[0];
     option2.querySelector("p").textContent = allAnswers[1];
     option3.querySelector("p").textContent = allAnswers[2];
 }
+
 
 // Handle Option Click
 function handleOptionClick(selectedOption) {
