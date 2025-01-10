@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math 4 Kids</title>
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- Add your stylesheet here -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- FontAwesome -->
 </head>
 
 <body>
@@ -23,16 +23,30 @@
             </a>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#" onclick="changeMode('addition')">Addition</a></li>
-                    <li><a href="#" onclick="changeMode('subtraction')">Subtraction</a></li>
-                    <li><a href="#" onclick="changeMode('multiplication')">Multiplication</a></li>
-                    <li><a href="#" onclick="changeMode('division')">Division</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="game.html">Play</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
+        <div>
+            <h1>Math 4 Kids</h1>
+            <p>Math 4 Kids is a fun and interactive website that generates math problems in addition, subtraction,
+                multiplication, and division for children to solve.</p>
+            <p>Click the "Play" button to start playing!</p>
+            <a href="game.html" class="btn">Play</a>
+
+            <label for="gameMode" class="mode-label">Choose Math Operation:</label>
+            <select id="gameMode" class="mode-selector">
+                <option value="addition">Addition</option>
+                <option value="subtraction">Subtraction</option>
+                <option value="multiplication">Multiplication</option>
+                <option value="division">Division</option>
+            </select>
+        </div>
         <div class="wrapper">
             <section class="equation">
                 <p id="num1">1</p>
@@ -59,7 +73,7 @@
         <p>© 2025 Math 4 Kids. All Rights Reserved.</p>
     </footer>
 
-    <script src="assets/js/game.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
