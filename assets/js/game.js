@@ -25,11 +25,15 @@ function generateEquation(mode) {
     let num2 = Math.floor(Math.random() * 13);
     let dummyAnswer1, dummyAnswer2;
 
+    // Addition Logic
     if (mode === "addition") {
         answer = num1 + num2;
         operatorElement.textContent = "+";
+        num1Element.textContent = num1;
+        num2Element.textContent = num2;
+
+        // Subtraction Logic (Ensures no negative results)
     } else if (mode === "subtraction") {
-        // Ensure no negative results
         if (num1 > num2) {
             answer = num1 - num2;
             num1Element.textContent = num1;
@@ -40,19 +44,28 @@ function generateEquation(mode) {
             num2Element.textContent = num1;
         }
         operatorElement.textContent = "-";
+
+        // Multiplication Logic
     } else if (mode === "multiplication") {
         answer = num1 * num2;
         operatorElement.textContent = "×";
+        num1Element.textContent = num1;
+        num2Element.textContent = num2;
+
+        // Division Logic (Ensures no remainders and no division by zero)
     } else if (mode === "division") {
-        // Ensure num2 is not zero and num1 is a multiple of num2
-        while (num2 === 0) {
+        while (num2 === 0) { // Prevent division by zero
             num2 = Math.floor(Math.random() * 13);
         }
-        num1 = num2 * Math.floor(Math.random() * 13);
+        num1 = num2 * Math.floor(Math.random() * 13); // Make num1 a multiple of num2
         answer = num1 / num2;
+
         operatorElement.textContent = "÷";
+        num1Element.textContent = num1;
+        num2Element.textContent = num2;
     }
 
+    // Update question mark
     questionMarkElement.textContent = "?";
 
     // Generate unique dummy answers
