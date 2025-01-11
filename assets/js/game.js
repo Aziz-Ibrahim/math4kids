@@ -6,6 +6,10 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
 });
 
+// Set CSS custom property for responsive viewport height
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 // Game Logic
 const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");
