@@ -117,10 +117,18 @@ footer {
 }
 
 .hero-text h1,
-.hero-text p,
+.hero-text h2,
 .hero-text a {
     font-size: 2rem;
     margin: 1rem;
+    font-family: 'Luckiest Guy', cursive;
+    padding-left: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    max-width: 50%;
     font-family: 'Luckiest Guy', cursive;
     padding-left: 10px;
 }
@@ -312,6 +320,19 @@ footer {
 
 /* Media Queries */
 @media(max-width:768px) {
+
+    #hero {
+        background-size: cover;
+    }
+
+    #hero p {
+        font-size: 1.5rem;
+        max-width: 90%;
+    }
+
+    #hero a {
+        font-size: 1.5rem;
+    }
 
     .wrapper {
         display: flex;
