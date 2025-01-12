@@ -527,7 +527,7 @@ footer {
 
     .equation {
         width: 94vw;
-        height: 20%;
+        height: 30%;
     }
 
     .equation p {
@@ -554,6 +554,6 @@ footer {
     footer {
         font-size: .75rem;
         position: fixed;
-        bottom: 100px;
+        bottom: 0;
     }
 }
