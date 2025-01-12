@@ -331,6 +331,10 @@ footer {
 /* Media Queries */
 @media(max-width:768px) {
 
+    body {
+        overflow-y: hidden;
+    }
+
     /* Header */
     header {
         position: sticky;
@@ -416,14 +420,14 @@ footer {
         min-height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         height: 100vh;
     }
 
     .equation {
         width: 94vw;
-        height: 50%;
+        height: 40%;
     }
 
     .equation p {
@@ -461,6 +465,11 @@ footer {
 
 @media(max-width:480px) {
 
+
+    body {
+        overflow-y: hidden;
+    }
+
     /* Home Page */
     #hero {
         text-align: center;
@@ -474,13 +483,14 @@ footer {
         justify-content: center;
         align-items: center;
         height: 90vh;
-        padding-top: 0;
-        background-color: rgba(34, 33, 17, 0.6);
+        padding-top: 20px;
+        background-color: rgba(34, 33, 17, 0.4);
     }
 
     .hero-text h1 {
         font-size: 1.4rem;
         text-align: center;
+        padding-top: 20px;
     }
 
     .hero-text h2 {
@@ -517,7 +527,7 @@ footer {
 
     .equation {
         width: 94vw;
-        height: 40%;
+        height: 30%;
     }
 
     .equation p {
