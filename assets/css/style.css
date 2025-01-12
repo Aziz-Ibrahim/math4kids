@@ -7,7 +7,9 @@
     margin: 0;
 }
 
+html,
 body {
+    height: 100vh;
     width: 100%;
     overflow-x: hidden;
 }
@@ -25,7 +27,6 @@ header {
     position: static;
     top: 0;
     width: 100%;
-    height: 50px;
 }
 
 /* Nav Bar */
@@ -33,7 +34,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
 }
 
 .title {
@@ -89,6 +89,8 @@ header {
 /* Main */
 
 main {
+    flex: 1;
+}
 
 /* Footer */
 footer {
