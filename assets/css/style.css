@@ -9,7 +9,7 @@
 
 html,
 body {
-    height: 100vh;
+    max-height: 100vh;
     width: 100%;
     overflow-x: hidden;
 }
@@ -369,7 +369,6 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: right;
-        align-items: right;
         background-color: rgba(34, 33, 17, 0.4);
         margin-bottom: 10px;
     }
@@ -459,11 +458,11 @@ footer {
         justify-content: center;
         align-items: center;
         height: 90vh;
-        background-color: rgba(34, 33, 17, 0.8);
+        background-color: rgba(34, 33, 17, 0.6);
     }
 
     .hero-text h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: center;
     }
 
@@ -473,13 +472,15 @@ footer {
     }
 
     #hero p {
-        font-size: 1rem;
-        max-width: 80%;
+        min-width: 90%;
+        font-size: .8rem;
         text-align: center;
     }
 
     #hero a {
+        min-width: 90%;
         font-size: 1rem;
+        text-align: center;
     }
 
 
