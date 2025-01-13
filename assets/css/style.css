@@ -30,6 +30,10 @@ header {
     width: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Nav Bar */
 .navbar {
     display: flex;
