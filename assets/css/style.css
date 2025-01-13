@@ -412,17 +412,16 @@ footer {
     /* Game Page */
 
     #game-mode-container {
-        height: 10%;
+        height: 10vh;
         flex-direction: row;
     }
 
     .wrapper {
-        min-height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 100vh;
+        height: 90vh;
     }
 
     .equation {
