@@ -40,13 +40,12 @@
             </a>
             <div class="nav-links">
                 <ul>
-                    <li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
+                    <li><a href="index.html" id="home-link" aria-label="Go to Home Page">Home</a></li>
                     <li><a class="current" href="game.html" aria-label="Refresh Play Page">New Equation</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
 
     <main>
         <!-- Game mode toggle -->
@@ -85,6 +84,15 @@
             </section>
         </div>
     </main>
+
+    <!-- Confirmation Dialog -->
+    <dialog id="exit-dialog">
+        <p>Are you sure you want to leave the game?</p>
+        <div class="dialog-buttons">
+            <button id="dialog-yes">Yes</button>
+            <button id="dialog-no">No</button>
+        </div>
+    </dialog>
     <!-- Footer -->
     <footer>
         <p>© 2025 Math 4 Kids. All Rights Reserved.</p>
