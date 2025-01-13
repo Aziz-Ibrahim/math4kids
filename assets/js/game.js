@@ -92,15 +92,28 @@ function generateEquation(mode) {
 
 // Handle Option Click
 function handleOptionClick(selectedOption) {
+    const equationDiv = document.querySelector('.equation'); // Ensure there's a class or ID for the equation container
     if (parseInt(selectedOption.querySelector("p").textContent) === answer) {
-        generateEquation(currentMode);
+        // Set the background color to green
+        equationDiv.classList.add("correct");
+
+        // Update the question mark to the correct answer
+        questionMarkElement.textContent = answer;
+
+        // Wait before generating a new equation
+        setTimeout(() => {
+            equationDiv.classList.remove("correct");
+            generateEquation(currentMode);
+        }, 1500); // Adjust the timeout duration as needed
     } else {
+        // Handle incorrect answer (shake animation)
         selectedOption.classList.add("shake");
         selectedOption.addEventListener('animationend', () => {
             selectedOption.classList.remove("shake");
         });
     }
 }
+
 
 // Add Event Listeners to Options
 option1.addEventListener("click", () => handleOptionClick(option1));
