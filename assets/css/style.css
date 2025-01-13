@@ -64,7 +64,8 @@ header {
 }
 
 .nav-links .current {
-    background-color: #e76e7a;
+    background-color: white;
+    color: #AB1221;
 
 }
 
