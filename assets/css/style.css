@@ -455,11 +455,23 @@ dialog::backdrop {
 
     /* Footer */
     footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         position: fixed;
         bottom: 0;
         height: 5vh;
         font-size: 1.5rem;
         padding: 0%;
+    }
+
+    footer p {
+        color: white;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
     }
 
 }
