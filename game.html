@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -12,17 +13,26 @@
     <meta property="og:title" content="Math for Kids - Fun and Educational Math Practice">
     <meta property="og:description"
         content="Generate math equations and let kids solve problems in addition, subtraction, multiplication, and division. A great way to make math fun!">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title -->
     <title>Math 4 Kids</title>
 </head>
 
 <body>
     <header>
+        <!-- Nav Bar -->
         <nav class="navbar">
             <div class="title">
                 <span><i class="fa fa-trophy" aria-hidden="true"></i></span> MATH 4 KIDS
             </div>
+            <!-- Nav Toggle -->
             <a href="#" class="nav-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -38,6 +48,7 @@
     </header>
 
     <main>
+        <!-- Game mode toggle -->
         <div id="game-mode-container">
             <label for="gameMode" class="mode-label">Choose Math Operation:</label>
             <select id="gameMode" class="mode-selector">
@@ -47,7 +58,9 @@
                 <option value="division">Division</option>
             </select>
         </div>
+        <!-- Game -->
         <div class="wrapper">
+            <!-- Equation -->
             <section class="equation">
                 <p id="num1">1</p>
                 <p id="operator">+</p>
@@ -55,6 +68,7 @@
                 <p id="equals">=</p>
                 <p id="question-mark">?</p>
             </section>
+            <!-- Answers -->
             <section class="answer-options">
                 <div id="option1" class="options">
                     <p>1</p>
@@ -68,11 +82,11 @@
             </section>
         </div>
     </main>
-
+    <!-- Footer -->
     <footer>
         <p>© 2025 Math 4 Kids. All Rights Reserved.</p>
     </footer>
-
+    <!-- Javascript -->
     <script src="assets/js/game.js"></script>
 </body>
 
