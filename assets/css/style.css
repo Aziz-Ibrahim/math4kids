@@ -574,7 +574,7 @@ footer {
     /* Game Page */
     #game-mode-container {
         height: 10%;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .wrapper {
