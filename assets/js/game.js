@@ -128,3 +128,25 @@ modeSelector.addEventListener("change", (event) => {
 
 // Initialize Game
 generateEquation(currentMode);
+
+// Exit Dialog
+const homeLink = document.getElementById("home-link");
+const dialog = document.getElementById("exit-dialog");
+const dialogYes = document.getElementById("dialog-yes");
+const dialogNo = document.getElementById("dialog-no");
+
+// Show dialog when Home is clicked
+homeLink.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default navigation
+    dialog.showModal(); // Show the dialog
+});
+
+// Handle Yes button
+dialogYes.addEventListener("click", () => {
+    window.location.href = "index.html"; // Redirect to home page
+});
+
+// Handle No button
+dialogNo.addEventListener("click", () => {
+    dialog.close(); // Close the dialog
+});
