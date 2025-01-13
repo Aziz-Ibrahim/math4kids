@@ -123,6 +123,7 @@ footer {
     background-position: 50%;
 }
 
+
 .hero-text h1 {
     font-size: 1.7rem;
     margin: 1rem;
@@ -452,7 +453,7 @@ footer {
         flex-direction: column;
         justify-content: right;
         padding-top: 120px;
-        background-color: rgba(34, 33, 17, 0.4);
+        background-color: rgba(255, 255, 255, 0.4);
     }
 
     .hero-text h1 {
@@ -550,7 +551,7 @@ footer {
         align-items: center;
         height: 90vh;
         padding-top: 20px;
-        background-color: rgba(34, 33, 17, 0.4);
+        background-color: rgba(255, 255, 255, 0.4);
     }
 
     .hero-text h1 {
