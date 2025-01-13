@@ -94,7 +94,7 @@ main {
 
 /* Footer */
 footer {
-    position: static;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background: #EA3546;
@@ -152,7 +152,7 @@ footer {
 }
 
 
-/* Game pahe */
+/* Game page */
 #game-mode-container {
     display: flex;
     flex-direction: row;
@@ -181,14 +181,14 @@ footer {
 .wrapper {
     display: grid;
     grid-template-columns: 82% 18%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .equation {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    height: 80%;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
     font-size: 10vw;
     background: #fff;
@@ -225,14 +225,14 @@ footer {
 .answer-options {
     font-size: 10vw;
     margin-right: 10px;
-    height: 100%;
+    height: 85%;
 }
 
 .options {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 29%;
+    height: 30%;
     cursor: pointer;
     border-radius: 3px;
     margin-top: 10px;
@@ -328,7 +328,70 @@ footer {
     }
 }
 
-/* Media Queries */
+/* Media queries for responsive design */
+
+/* Extra large screens (desktops) */
+@media(min-width:1441px) {
+
+    /* Header */
+    header {
+        height: 5vh;
+        font-size: 1.5rem;
+    }
+
+    header .title {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        height: 5vh;
+    }
+
+    /* Home page */
+    /* Hero */
+    .hero {
+        height: 90vh;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+
+    .hero-text a {
+        font-size: 2rem;
+    }
+
+    /* Game Page */
+    #game-mode-container {
+        height: 10vh;
+        font-size: 2rem;
+    }
+
+    #gameMode {
+        font-size: 2rem;
+    }
+
+    .wrapper {
+        height: 90vh;
+    }
+
+    /* Footer */
+    footer {
+        height: 5vh;
+        font-size: 2rem;
+    }
+
+}
+
+/* Mediuam screens (tablets) */
 @media(max-width:768px) {
 
     body {
@@ -382,7 +445,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: right;
-        padding-top: 3rem;
+        padding-top: 120px;
         background-color: rgba(34, 33, 17, 0.4);
     }
 
@@ -461,10 +524,8 @@ footer {
     }
 }
 
-
+/* Small screens (mobile phones) */
 @media(max-width:480px) {
-
-
     body {
         overflow-y: hidden;
     }
