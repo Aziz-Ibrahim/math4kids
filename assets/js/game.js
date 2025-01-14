@@ -104,7 +104,7 @@ function handleOptionClick(selectedOption) {
         setTimeout(() => {
             equationDiv.classList.remove("correct");
             generateEquation(currentMode);
-        }, 1500); // Adjust the timeout duration as needed
+        }, 600);
     } else {
         // Handle incorrect answer (shake animation)
         selectedOption.classList.add("shake");
