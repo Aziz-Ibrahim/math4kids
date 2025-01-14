@@ -36,8 +36,10 @@ main {
 /* Nav Bar */
 nav {
     background: #AB1221;
-    display: inline;
-    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 10%;
     height: 8vh;
     width: 100%;
 }
