@@ -73,7 +73,7 @@ footer {
     text-align: center;
     background-color: #AB1221;
     color: #fff;
-    font-size: 1vw;
+    font-size: 1rem;
     padding: .5em .5em;
 }
 
@@ -383,7 +383,7 @@ dialog::backdrop {
 
     .answer-options {
         width: 94vw;
-        height: 40%;
+        height: 35%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -399,15 +399,11 @@ dialog::backdrop {
         object-fit: contain;
     }
 
-    footer {
-        margin-top: 10px;
-        position: static;
-    }
-
     /* Footer */
     footer {
-        margin-top: 0;
+        font-size: .75rem;
         position: fixed;
+        bottom: 0;
     }
 }
 
@@ -454,12 +450,5 @@ dialog::backdrop {
         height: 12vh;
         margin-left: 0;
         width: 100%;
-    }
-
-    /* Footer */
-    footer {
-        font-size: .75rem;
-        position: fixed;
-        bottom: 0;
     }
 }
