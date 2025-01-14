@@ -66,14 +66,15 @@ main {
 footer {
     position: fixed;
     bottom: 0;
-    height: 60px;
+    height: 50px;
     min-width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
     background-color: #AB1221;
     color: #fff;
-    padding: 2% 5%;
+    font-size: 1vw;
+    padding: .5em .5em;
 }
 
 footer a {
@@ -105,6 +106,7 @@ footer a {
 
 .hero-text {
     padding: 1em 1em;
+    font-size: 3vw;
 }
 
 #hero a {
@@ -137,22 +139,16 @@ footer a {
     text-align: center;
 }
 
-.container {
-    width: 95%;
-    margin: auto;
-}
-
 .wrapper {
     display: grid;
-    grid-template-columns: 82% 18%;
-    height: 80vh;
+    grid-template-columns: 75% 25%;
 }
 
 .equation {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 100%;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
     font-size: 10vw;
     background: #fff;
@@ -187,19 +183,23 @@ footer a {
 }
 
 .answer-options {
-    font-size: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     margin-right: 10px;
-    height: 85%;
 }
 
 .options {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 30%;
     cursor: pointer;
     border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
     margin-top: 10px;
+    font-size: 10vw;
     color: #fff;
     transition: 0.5s;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
