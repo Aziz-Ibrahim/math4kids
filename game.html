@@ -51,13 +51,17 @@
         <!-- Game mode toggle -->
         <div id="game-mode-container">
             <label for="gameMode" class="mode-label">Choose Math Operation:</label>
-            <select id="gameMode" class="mode-selector">
-                <option value="addition">Addition</option>
-                <option value="subtraction">Subtraction</option>
-                <option value="multiplication">Multiplication</option>
-                <option value="division">Division</option>
-            </select>
+            <div id="gameMode" class="mode-selector custom-dropdown">
+                <button class="dropdown-button">Addition</button>
+                <ul class="dropdown-menu">
+                    <li data-value="addition">Addition</li>
+                    <li data-value="subtraction">Subtraction</li>
+                    <li data-value="multiplication">Multiplication</li>
+                    <li data-value="division">Division</li>
+                </ul>
+            </div>
         </div>
+
         <!-- Game -->
         <!-- Equation -->
         <section class="equation">
