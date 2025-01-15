@@ -394,6 +394,10 @@ dialog::backdrop {
 /* Small screens (phones) */
 @media(max-width:480px) {
 
+    .hero-text {
+        font-size: 4vw;
+    }
+
     .answer-options {
         grid-area: answers;
         display: flex;
