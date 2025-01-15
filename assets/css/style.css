@@ -6,6 +6,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    width: 100%;
 }
 
 body {
@@ -58,17 +59,17 @@ main {
 
 /* Footer */
 footer {
-    position: static;
+    position: sticky;
     bottom: 0;
     height: 50px;
-    min-width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
     background-color: #AB1221;
     color: #fff;
     font-size: 1rem;
-    padding: .5em .5em;
+    padding: .5em .5em 0 .5em;
 }
 
 footer a {
@@ -100,7 +101,7 @@ footer a {
 
 .hero-text {
     padding: 1em 1em;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 #hero a {
@@ -212,7 +213,7 @@ footer a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
     background-color: #f9f9f9;
@@ -220,6 +221,7 @@ footer a {
     padding: 20px;
     margin: 0 10px;
     width: 95%;
+    height: 100%;
 }
 
 .equation p {
@@ -252,7 +254,8 @@ footer a {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     padding: 10px;
-    width: 80%;
+    width: 90%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -260,9 +263,9 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #007bff;
     color: white;
-    font-size: 1.5rem;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    font-size: 2rem;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
@@ -270,7 +273,6 @@ footer a {
 }
 
 .options:hover {
-    background-color: #0056b3;
     transform: scale(1.05);
 }
 
