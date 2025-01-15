@@ -152,10 +152,6 @@ footer a {
     text-decoration: none;
 }
 
-.hidden {
-    display: none;
-}
-
 .equation {
     grid-area: equation;
     display: flex;
@@ -369,19 +365,20 @@ dialog::backdrop {
             "answers";
         grid-template-columns: auto;
         grid-template-rows: 1fr 2fr 2fr;
-        gap: 10px;
+        gap: 1px;
     }
 
     .equation {
         grid-area: equation;
         margin: 10px;
+        font-size: 12vw;
     }
 
     .answer-options {
         grid-area: answers;
         display: flex;
         flex-direction: row;
-        font-size: 10vw;
+        font-size: 15vw;
     }
 
     footer {
