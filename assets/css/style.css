@@ -274,10 +274,6 @@ footer a {
     transition: transform 0.2s, background-color 0.2s;
 }
 
-.options:hover {
-    transform: scale(1.05);
-}
-
 #option1 {
     background-color: #F9C80E;
     color: white;
@@ -360,6 +356,10 @@ footer a {
 
 /* Media query for hover effect on displays that support hover */
 @media (hover: hover) {
+    .options:hover {
+        transform: scale(1.05);
+    }
+
     #option1:hover {
         background-color: white;
         color: #F9C80E;
