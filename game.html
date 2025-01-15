@@ -47,7 +47,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="game-container">
         <!-- Game mode toggle -->
         <div id="game-mode-container">
             <label for="gameMode" class="mode-label">Choose Math Operation:</label>
@@ -59,30 +59,28 @@
             </select>
         </div>
         <!-- Game -->
-        <div class="wrapper">
-            <!-- Equation -->
-            <section class="equation">
-                <h2 class="hidden">Equation</h2>
-                <p id="num1">1</p>
-                <p id="operator">+</p>
-                <p id="num2">1</p>
-                <p id="equals">=</p>
-                <p id="question-mark">?</p>
-            </section>
-            <!-- Answers -->
-            <section class="answer-options">
-                <h2 class="hidden">Answer Options</h2>
-                <div id="option1" class="options">
-                    <p>1</p>
-                </div>
-                <div id="option2" class="options">
-                    <p>2</p>
-                </div>
-                <div id="option3" class="options">
-                    <p>3</p>
-                </div>
-            </section>
-        </div>
+        <!-- Equation -->
+        <section class="equation">
+            <h2 class="hidden">Equation</h2>
+            <p id="num1">1</p>
+            <p id="operator">+</p>
+            <p id="num2">1</p>
+            <p id="equals">=</p>
+            <p id="question-mark">?</p>
+        </section>
+        <!-- Answers -->
+        <section class="answer-options">
+            <h2 class="hidden">Answer Options</h2>
+            <div id="option1" class="options">
+                <p>1</p>
+            </div>
+            <div id="option2" class="options">
+                <p>2</p>
+            </div>
+            <div id="option3" class="options">
+                <p>3</p>
+            </div>
+        </section>
     </main>
 
     <!-- Confirmation Dialog -->

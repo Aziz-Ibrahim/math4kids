@@ -119,42 +119,53 @@ footer a {
 
 
 /* Game page */
+#game-container {
+    display: grid;
+    grid-template-areas:
+        "top top"
+        "equation answers";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    gap: 10px;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
 #game-mode-container {
+    grid-area: top;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 5%;
+    flex-direction: row;
     color: #AB1221;
-    padding: 10px;
 }
 
-#gameMode {
-    font-size: 1rem;
-    margin-right: 10px;
-    font-family: luckiest guy;
-    border-radius: 3px;
-    border: #AB1221 2px solid;
-    color: #AB1221;
-    text-align: center;
+.mode-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #AB1221;
+    color: #fff;
+    font-family: 'luckiest guy', cursive;
+    text-decoration: none;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 75% 25%;
+.hidden {
+    display: none;
 }
 
 .equation {
+    grid-area: equation;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    flex-direction: row;
     font-size: 10vw;
-    background: #fff;
-    border-radius: 3px;
-    text-align: center;
-    margin: 10px 10px 0px 10px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
 .equation p {
@@ -183,26 +194,22 @@ footer a {
 }
 
 .answer-options {
+    grid-area: answers;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    margin-right: 10px;
+    padding: 5% 5%;
+    font-size: 8vw;
 }
 
 .options {
     cursor: pointer;
-    border-radius: 3px;
     width: 100%;
-    height: 100%;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 10vw;
-    color: #fff;
-    transition: 0.5s;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px 5px;
 }
 
 #option1 {
@@ -354,101 +361,47 @@ dialog::backdrop {
 
 /* Mediuam screens (tablets) */
 @media(max-width:768px) {
-
-    /* Game Page */
-
-    #game-mode-container {
-        height: 10vh;
-        flex-direction: row;
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: 90vh;
+    #game-container {
+        display: grid;
+        grid-template-areas:
+            "top"
+            "equation"
+            "answers";
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 2fr 2fr;
+        gap: 10px;
     }
 
     .equation {
-        width: 94vw;
-        height: 40%;
-    }
-
-    .equation p {
-        display: inline;
-        font-size: 4rem;
-
+        grid-area: equation;
+        margin: 10px;
     }
 
     .answer-options {
-        width: 94vw;
-        height: 35%;
+        grid-area: answers;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        margin-right: 0;
+        font-size: 10vw;
     }
 
-    .options {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        object-fit: contain;
-    }
-
-    /* Footer */
     footer {
-        font-size: .75rem;
-        position: fixed;
+        position: sticky;
         bottom: 0;
+        font-size: .75rem;
     }
 }
 
-/* Small screens (mobile phones) */
+/* Small screens (phones) */
 @media(max-width:480px) {
-    body {
-        overflow-y: hidden;
-    }
-
-    /* Game Page */
-    #game-mode-container {
-        height: 10%;
-        flex-direction: row;
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: 100vh;
-    }
-
-    .equation {
-        width: 94vw;
-        height: 30%;
-    }
-
-    .equation p {
-        display: inline;
-        position: relative;
-        padding: 10px;
-    }
 
     .answer-options {
-        width: 94%;
-        height: 40%;
+        grid-area: answers;
         display: flex;
-        flex-direction: inherit;
-        justify-content: space-around;
+        flex-direction: column;
+        font-size: 10vw;
     }
 
-    .options {
-        height: 12vh;
-        margin-left: 0;
-        width: 100%;
+    nav {
+        font-size: 4vw;
     }
 }
