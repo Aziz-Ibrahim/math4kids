@@ -1,16 +1,4 @@
-// Navbar Toggle for Responsive Navigation
-const toggleButton = document.querySelector('.nav-toggle');
-const navbarLinks = document.querySelector('.nav-links');
-
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-});
-
-// Set CSS custom property for responsive viewport height
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-// Game Logic
+// Game Logic Elements
 const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");
 const option3 = document.getElementById("option3");
@@ -23,7 +11,10 @@ const modeSelector = document.getElementById("gameMode");
 let currentMode = "addition";
 let answer = 0;
 
-// Generate New Equation
+/**
+ * Generates a new math equation based on the selected mode.
+ * @param {string} mode - The mode of the game (addition, subtraction, multiplication, division).
+ */
 function generateEquation(mode) {
     let num1 = Math.floor(Math.random() * 13);
     let num2 = Math.floor(Math.random() * 13);
@@ -69,7 +60,6 @@ function generateEquation(mode) {
         num2Element.textContent = num2;
     }
 
-    // Update question mark
     questionMarkElement.textContent = "?";
 
     // Generate unique dummy answers
@@ -88,25 +78,21 @@ function generateEquation(mode) {
     option3.querySelector("p").textContent = allAnswers[2];
 }
 
-
-
-// Handle Option Click
+/**
+ * Handles the click event for a game option.
+ * @param {HTMLElement} selectedOption - The option element that was clicked.
+ */
 function handleOptionClick(selectedOption) {
-    const equationDiv = document.querySelector('.equation'); // Ensure there's a class or ID for the equation container
+    const equationDiv = document.querySelector('.equation');
     if (parseInt(selectedOption.querySelector("p").textContent) === answer) {
-        // Set the background color to green
         equationDiv.classList.add("correct");
-
-        // Update the question mark to the correct answer
         questionMarkElement.textContent = answer;
 
-        // Wait before generating a new equation
         setTimeout(() => {
             equationDiv.classList.remove("correct");
             generateEquation(currentMode);
         }, 600);
     } else {
-        // Handle incorrect answer (shake animation)
         selectedOption.classList.add("shake");
         selectedOption.addEventListener('animationend', () => {
             selectedOption.classList.remove("shake");
@@ -114,13 +100,14 @@ function handleOptionClick(selectedOption) {
     }
 }
 
-
 // Add Event Listeners to Options
 option1.addEventListener("click", () => handleOptionClick(option1));
 option2.addEventListener("click", () => handleOptionClick(option2));
 option3.addEventListener("click", () => handleOptionClick(option3));
 
-// Change Game Mode
+/**
+ * Changes the game mode and generates a new equation.
+ */
 modeSelector.addEventListener("change", (event) => {
     currentMode = event.target.value;
     generateEquation(currentMode);
@@ -129,24 +116,30 @@ modeSelector.addEventListener("change", (event) => {
 // Initialize Game
 generateEquation(currentMode);
 
-// Exit Dialog
+// Exit Dialog Elements
 const homeLink = document.getElementById("home-link");
 const dialog = document.getElementById("exit-dialog");
 const dialogYes = document.getElementById("dialog-yes");
 const dialogNo = document.getElementById("dialog-no");
 
-// Show dialog when Home is clicked
+/**
+ * Shows a confirmation dialog when the home link is clicked.
+ */
 homeLink.addEventListener("click", (event) => {
     event.preventDefault(); // Prevent default navigation
     dialog.showModal(); // Show the dialog
 });
 
-// Handle Yes button
+/**
+ * Redirects to the home page when the "Yes" button is clicked in the dialog.
+ */
 dialogYes.addEventListener("click", () => {
     window.location.href = "index.html"; // Redirect to home page
 });
 
-// Handle No button
+/**
+ * Closes the dialog when the "No" button is clicked.
+ */
 dialogNo.addEventListener("click", () => {
     dialog.close(); // Close the dialog
 });

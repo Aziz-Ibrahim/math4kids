@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kalam:wght@300;400;700&family=LXGW+WenKai+Mono+TC&family=Luckiest+Guy&family=Outfit:wght@100..900&family=Sora:wght@100..800&family=Stick&display=swap');
+
+/* Universal */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #fff;
+}
+
+/* Header */
+nav {
+    position: fixed;
+    height: 60px;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #AB1221;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav li:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 60px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #AB1221;
+    color: #fff;
+    padding: 2% 5%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Home */
+
+#hero {
+    background-image: url('assets/images/hero-bg-img-sm.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #AB1221;
+    text-align: center;
+}
+
+.hero-container {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 5% 5%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.hero-text {
+    padding: 1em 1em;
+}
+
+#hero a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #AB1221;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+
+#game-container {
+    display: grid;
+    grid-template-areas:
+        "top top"
+        "equation answers";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    gap: 10px;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+#game-mode-container {
+    grid-area: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #AB1221;
+}
+
+.mode-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #AB1221;
+    color: #fff;
+    font-family: 'luckiest guy', cursive;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.equation {
+    grid-area: equation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 10vw;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.equation p {
+    display: inline;
+    padding: 20px;
+}
+
+#num1 {
+    color: #F9C80E;
+}
+
+#operator {
+    color: #662E9B;
+}
+
+#num2 {
+    color: #F86624;
+}
+
+#equals {
+    color: #43BCCD;
+}
+
+#question-mark {
+    color: #EA3546;
+}
+
+.answer-options {
+    grid-area: answers;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5%;
+    font-size: 8vw;
+}
+
+.options {
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px 5px;
+}
+
+#option1 {
+    background-color: #F9C80E;
+    color: white;
+}
+
+
+#option2 {
+    background-color: #F86624;
+    color: white;
+}
+
+
+#option3 {
+    background-color: #43BCCD;
+    color: white;
+}
+
+@media(max-width:768px) {
+    #game-container {
+        display: grid;
+        grid-template-areas:
+            "top"
+            "equation"
+            "answers";
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 2fr 2fr;
+        gap: 10px;
+    }
+
+    .equation {
+        grid-area: equation;
+        margin: 10px;
+    }
+
+    .answer-options {
+        grid-area: answers;
+        display: flex;
+        flex-direction: row;
+        font-size: 10vw;
+    }
+}
+
+@media(max-width:480px) {
+
+    .answer-options {
+        grid-area: answers;
+        display: flex;
+        flex-direction: column;
+        font-size: 10vw;
+    }
+
+}
