@@ -6,10 +6,48 @@ const num1Element = document.getElementById("num1");
 const num2Element = document.getElementById("num2");
 const operatorElement = document.getElementById("operator");
 const questionMarkElement = document.getElementById("question-mark");
-const modeSelector = document.getElementById("gameMode");
+
+// Custom Dropdown Elements
+const modeSelector = document.getElementById('gameMode'); // Custom dropdown
+const dropdownButton = modeSelector.querySelector('.dropdown-button');
+const dropdownMenu = modeSelector.querySelector('.dropdown-menu');
+const dropdownItems = dropdownMenu.querySelectorAll('li');
 
 let currentMode = "addition";
 let answer = 0;
+
+/**
+ * Toggles the visibility of the dropdown menu.
+ */
+dropdownButton.addEventListener('click', () => {
+    modeSelector.classList.toggle('open');
+});
+
+/**
+ * Handles the click event for dropdown items.
+ */
+dropdownItems.forEach(item => {
+    item.addEventListener('click', (event) => {
+        const selectedMode = event.target.dataset.value;
+
+        // Update the button text
+        dropdownButton.textContent = event.target.textContent;
+
+        // Update the current mode and generate a new equation
+        currentMode = selectedMode;
+        generateEquation(currentMode);
+
+        // Close the dropdown menu
+        modeSelector.classList.remove('open');
+    });
+});
+
+// Close dropdown if clicked outside
+document.addEventListener('click', (event) => {
+    if (!modeSelector.contains(event.target)) {
+        modeSelector.classList.remove('open');
+    }
+});
 
 /**
  * Generates a new math equation based on the selected mode.
@@ -104,14 +142,6 @@ function handleOptionClick(selectedOption) {
 option1.addEventListener("click", () => handleOptionClick(option1));
 option2.addEventListener("click", () => handleOptionClick(option2));
 option3.addEventListener("click", () => handleOptionClick(option3));
-
-/**
- * Changes the game mode and generates a new equation.
- */
-modeSelector.addEventListener("change", (event) => {
-    currentMode = event.target.value;
-    generateEquation(currentMode);
-});
 
 // Initialize Game
 generateEquation(currentMode);
