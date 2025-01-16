@@ -108,4 +108,5 @@ export {
     dropdownMenu,
     dropdownItems,
     currentMode,
+    handleOptionClick
 };
