@@ -133,6 +133,9 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 ![Home page HTML validation](docs/home-page-html-validation.png)
 ![Game page HTML validation](docs/game-page-html-validation.png)
 ![CSS validation](docs/css-validation.png)
+
+---
+
 ### Manual Testing
 
 | Test Case                    | Steps                                | Expected Result              | Status |
@@ -141,6 +144,68 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 | Game Mode Functionality      | Select and complete a game mode     | Works as intended            | Pass   |
 | JS Functions                 | Test dropdown menu, equation generation, and option click logic | Functions as expected         | Pass   |
 
+
+### Jest Unit Testing
+
+The following Jest tests were created to ensure the correctness of key functions:
+
+#### 1. **Dropdown Menu Tests**
+
+- Verify that the dropdown menu toggles between open and closed states:
+
+```javascript
+import { toggleDropdown } from './game';
+
+test('toggleDropdown toggles the open class on the menu', () => {
+    const menu = document.createElement('div');
+    toggleDropdown(menu);
+    expect(menu.classList.contains('open')).toBe(true);
+    toggleDropdown(menu);
+    expect(menu.classList.contains('open')).toBe(false);
+});
+```
+
+#### 2. **Equation Generation Tests**
+
+- Ensure that equations generated in different modes are correct:
+
+```javascript
+import { generateEquation } from './gameLogic';
+
+test('generateEquation produces valid addition results', () => {
+    const { num1, num2, answer, operator } = generateEquation('addition');
+    expect(answer).toBe(num1 + num2);
+    expect(operator).toBe('+');
+});
+
+test('generateEquation ensures no division by zero', () => {
+    const { num1, num2, operator } = generateEquation('division');
+    expect(num2).not.toBe(0);
+    expect(operator).toBe('÷');
+});
+```
+
+#### 3. **Game Option Selection Tests**
+
+- Validate the behavior when a correct or incorrect answer is chosen:
+
+```javascript
+import { handleOptionClick } from './gameLogic';
+
+test('handleOptionClick returns true for correct answers', () => {
+    const mockOption = { querySelector: () => ({ textContent: '5' }) };
+    const regenerateEquation = jest.fn();
+    const correct = handleOptionClick(mockOption, regenerateEquation);
+    expect(correct).toBe(true);
+});
+
+test('handleOptionClick returns false for incorrect answers', () => {
+    const mockOption = { querySelector: () => ({ textContent: '3' }) };
+    const regenerateEquation = jest.fn();
+    const incorrect = handleOptionClick(mockOption, regenerateEquation);
+    expect(incorrect).toBe(false);
+});
+```
 
 ---
 
