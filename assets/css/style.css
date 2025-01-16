@@ -83,7 +83,7 @@ footer a {
 /* Home */
 
 #hero {
-    background-image: url('../images/hero-bg-img-md.jpg');
+    background-image: url('../images/hero-bg-img-sm.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
