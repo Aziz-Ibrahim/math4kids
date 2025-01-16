@@ -41,7 +41,7 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html" id="home-link" aria-label="Go to Home Page">Home</a></li>
-                    <li><a class="current" href="game.html" aria-label="Refresh Play Page">New Equation</a></li>
+                    <li><a href="game.html" id="restart" aria-label="Restart game | Refresh Play Page">Restart</a></li>
                 </ul>
             </div>
         </nav>
@@ -68,6 +68,10 @@
                 <!-- Equation -->
                 <section class="equation">
                     <h2 class="hidden">Equation</h2>
+                    <!-- Live Score -->
+                    <div id="score-container">
+                        Score: <span id="live-score">0</span>
+                    </div>
                     <p id="num1">1</p>
                     <p id="operator">+</p>
                     <p id="num2">1</p>
