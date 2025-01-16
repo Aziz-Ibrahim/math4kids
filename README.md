@@ -273,6 +273,6 @@ test('handleOptionClick returns false for incorrect answers', () => {
 ---
 
 ## Acknowledgments
-- **[Iuliia Konovalove](https://github.com/IuliiaKonovalova): For feedback and improvement ideas.
+- [Iuliia Konovalove](https://github.com/IuliiaKonovalova): For feedback and improvement ideas.
 - **Family and Friends**: For feedback and testing.
 - **Online Communities**: Resources and tutorials for inspiration.
