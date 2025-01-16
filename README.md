@@ -71,12 +71,14 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 - **Welcome Section**: A bright and engaging introduction to the platform.
 ![Welcome message](docs/m4k-landing-page.png)
 
-- **Game Previews**: Visual examples of different activities available.
-![Desktop play](docs/m4k-desktop-play.png) ![Tablet play](docs/m4k-tablet-play.png) ![Mobile play](docs/m4k-mobile-play.png)
-
 ### Game Modes
 
-- **Quick Play**: Randomized math problems for immediate practice.
+- **Quick Play**: Randomized math problems for immediate practice in four modes: 
+- Addition.
+- Subtraction.
+- Multiplication.
+- Division.
+![Desktop play](docs/m4k-desktop-play.png) ![Tablet play](docs/m4k-tablet-play.png) ![Mobile play](docs/m4k-mobile-play.png)
 
 ---
 
