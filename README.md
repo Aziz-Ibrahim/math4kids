@@ -261,6 +261,7 @@ test('handleOptionClick returns false for incorrect answers', () => {
 
 - Icons from [FontAwesome](https://fontawesome.com/).
 - Images from [Stockcake](https://stockcake.com/i/colorful-math-fun_1523507_1174789).
+- Favicon from [favicon.io](https://favicon.io/favicon-generator/)
 
 ### Tools
 
