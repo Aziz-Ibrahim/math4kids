@@ -268,10 +268,11 @@ test('handleOptionClick returns false for incorrect answers', () => {
 - [VS Code](https://code.visualstudio.com/) for development.
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance and accessibility checks.
 - [WireframeCC](https://wireframe.cc/) for creating wireframes.
+- [Image Resizer](https://imageresizer.com/) for sizing hero image.
 
 ---
 
 ## Acknowledgments
-
+- **[Iuliia Konovalove](https://github.com/IuliiaKonovalova): For feedback and improvement ideas.
 - **Family and Friends**: For feedback and testing.
 - **Online Communities**: Resources and tutorials for inspiration.
