@@ -69,23 +69,14 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 ### Homepage
 
 - **Welcome Section**: A bright and engaging introduction to the platform.
+![Welcome message](docs/m4k-landing-page.png)
 
 - **Game Previews**: Visual examples of different activities available.
+![Desktop play](docs/m4k-desktop-play.png) ![Tablet play](docs/m4k-tablet-play.png) ![Mobile play](docs/m4k-mobile-play.png)
 
 ### Game Modes
 
 - **Quick Play**: Randomized math problems for immediate practice.
-
-
-### Progress Tracking
-
-- **Scores and Badges**: Visual indicators of achievements.
-- **Performance Graphs**: Weekly and monthly progress reports.
-
-### Settings
-
-- **Customization**: Options to select difficulty levels, themes, and problem types.
-- **Parent Controls**: Manage access and monitor activities.
 
 ---
 
@@ -129,12 +120,19 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 ### Responsive Design Testing
 
 - Ensured seamless usability on devices ranging from desktops to smartphones.
+![Home Page responsive design](docs/home-page-responsive.png)
+![Game Page responsive design](docs/game-page-responsive.png)
 
 ### Accessibility Testing
 
-- Validated using WAVE and Lighthouse tools.
+- Validated using Lighthouse tools.
+![Home page Lighthouse test](docs/home-page-lighthouse-check.png)
+![Game page Lighthouse test](docs/game-page-lighthouse-check.png)
 - Verified contrast ratios and alternative text for images.
-
+![Contrast check](docs/webaim-contrast-check.png)
+![Home page HTML validation](docs/home-page-html-validation.png)
+![Game page HTML validation](docs/game-page-html-validation.png)
+![CSS validation](docs/css-validation.png)
 ### Manual Testing
 
 | Test Case                    | Steps                                | Expected Result              | Status |
@@ -170,16 +168,25 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 
 ## Future Improvements
 
+### Gameplay
 - Add multiplayer mode for collaborative learning.
 - Introduce AI-generated personalized challenges.
 - Expand problem types to include fractions and geometry.
 
----
+### Progress Tracking
 
+- Scores and Badges**: Visual indicators of achievements.
+- Performance Graphs**: Weekly and monthly progress reports.
+
+### Settings
+
+- Customization**: Options to select difficulty levels, themes, and problem types.
+- Parent Controls**: Manage access and monitor activities.
+---
 ## Credits
 
 ### Content
-
+- The idea behind this project was inspired by [Miguel Nunez](https://medium.com/@miguelznunez).
 - All math problems and activities were designed in-house.
 
 ### Media
@@ -191,6 +198,7 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 
 - [VS Code](https://code.visualstudio.com/) for development.
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance and accessibility checks.
+- [WireframeCC](https://wireframe.cc/) for creating wireframes.
 
 ---
 
