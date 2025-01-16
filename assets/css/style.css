@@ -224,7 +224,24 @@ footer a {
     margin: 0 10px;
     width: 95%;
     height: 100%;
+    position: relative;
 }
+
+
+#score-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #662E9B;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #F86624;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
 
 .equation p {
     display: inline;
