@@ -132,6 +132,7 @@ footer a {
     justify-content: center;
     padding: 10px;
     margin-top: 60px;
+    z-index: 999;
 }
 
 #gameMode {
@@ -231,7 +232,7 @@ footer a {
 #score-container {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     background-color: #fff;
     padding: 10px 20px;
     border: 2px solid #662E9B;
