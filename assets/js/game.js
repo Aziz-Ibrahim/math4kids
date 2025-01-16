@@ -7,6 +7,9 @@ const num2Element = document.getElementById("num2");
 const operatorElement = document.getElementById("operator");
 const questionMarkElement = document.getElementById("question-mark");
 
+// Reference to the score display element
+const scoreContainer = document.querySelector('#score-container');
+
 // Custom Dropdown Elements
 const modeSelector = document.getElementById('gameMode'); // Custom dropdown
 const dropdownButton = modeSelector.querySelector('.dropdown-button');
@@ -15,6 +18,7 @@ const dropdownItems = dropdownMenu.querySelectorAll('li');
 
 let currentMode = "addition";
 let answer = 0;
+let score = 0; // Initialize score
 
 /**
  * Toggles the visibility of the dropdown menu.
@@ -116,6 +120,8 @@ function generateEquation(mode) {
     option3.querySelector("p").textContent = allAnswers[2];
 }
 
+
+
 /**
  * Handles the click event for a game option.
  * @param {HTMLElement} selectedOption - The option element that was clicked.
@@ -125,6 +131,10 @@ function handleOptionClick(selectedOption) {
     if (parseInt(selectedOption.querySelector("p").textContent) === answer) {
         equationDiv.classList.add("correct");
         questionMarkElement.textContent = answer;
+
+        // Increment and update score
+        score++;
+        updateScore();
 
         setTimeout(() => {
             equationDiv.classList.remove("correct");
@@ -137,6 +147,16 @@ function handleOptionClick(selectedOption) {
         });
     }
 }
+
+/**
+ * Updates the score display in the DOM.
+ */
+function updateScore() {
+    if (scoreContainer) {
+        scoreContainer.textContent = `Score: ${score}`;
+    }
+}
+
 
 // Add Event Listeners to Options
 option1.addEventListener("click", () => handleOptionClick(option1));
