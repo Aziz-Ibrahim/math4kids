@@ -478,12 +478,19 @@ dialog::backdrop {
         align-items: center;
     }
 
+    /* Equation section */
     .equation {
         justify-self: center;
         font-size: 2rem !important;
         width: 80%;
     }
 
+    .equation p {
+        display: inline;
+        padding: 20px 5px;
+    }
+
+    /* Answwer section */
     .answer-options {
         width: 90%;
     }
