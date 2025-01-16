@@ -168,7 +168,9 @@ generateEquation(currentMode);
 
 // Exit Dialog Elements
 const homeLink = document.getElementById("home-link");
+const restartLink = document.getElementById("restart"); // Updated id for the restart link
 const dialog = document.getElementById("exit-dialog");
+const dialogMessage = document.getElementById("dialog-message"); // For updating the dialog message
 const dialogYes = document.getElementById("dialog-yes");
 const dialogNo = document.getElementById("dialog-no");
 
@@ -177,14 +179,23 @@ const dialogNo = document.getElementById("dialog-no");
  */
 homeLink.addEventListener("click", (event) => {
     event.preventDefault(); // Prevent default navigation
+    dialogMessage.textContent = "Are you sure you want to return to the home page?"; // Update the dialog message
+    dialogYes.onclick = () => {
+        window.location.href = "index.html"; // Redirect to home page
+    };
     dialog.showModal(); // Show the dialog
 });
 
 /**
- * Redirects to the home page when the "Yes" button is clicked in the dialog.
+ * Shows a confirmation dialog when the restart link is clicked.
  */
-dialogYes.addEventListener("click", () => {
-    window.location.href = "index.html"; // Redirect to home page
+restartLink.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default navigation
+    dialogMessage.textContent = "Are you sure you want to restart the game?"; // Update the dialog message
+    dialogYes.onclick = () => {
+        window.location.href = "game.html"; // Redirect to game page (restart)
+    };
+    dialog.showModal(); // Show the dialog
 });
 
 /**
