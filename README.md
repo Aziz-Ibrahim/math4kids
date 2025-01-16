@@ -156,7 +156,7 @@ The following Jest tests were created to ensure the correctness of key functions
 - Verify that the dropdown menu toggles between open and closed states:
 
 ```javascript
-import { toggleDropdown } from './game';
+import { toggleDropdown } from './gameModule';
 
 test('toggleDropdown toggles the open class on the menu', () => {
     const menu = document.createElement('div');
@@ -172,7 +172,7 @@ test('toggleDropdown toggles the open class on the menu', () => {
 - Ensure that equations generated in different modes are correct:
 
 ```javascript
-import { generateEquation } from './game';
+import { generateEquation } from './gameModule';
 
 test('generateEquation produces valid addition results', () => {
     const { num1, num2, answer, operator } = generateEquation('addition');
@@ -192,7 +192,7 @@ test('generateEquation ensures no division by zero', () => {
 - Validate the behavior when a correct or incorrect answer is chosen:
 
 ```javascript
-import { handleOptionClick } from './game';
+import { handleOptionClick } from './gameModule';
 
 test('handleOptionClick returns true for correct answers', () => {
     const mockOption = { querySelector: () => ({ textContent: '5' }) };
@@ -235,7 +235,8 @@ test('handleOptionClick returns false for incorrect answers', () => {
 ---
 
 ## Future Improvements
-
+### Developer Improvement
+- At the time of creating this project, I wasn't very confident in testing with Jest, so I created a replica of my game.js file to be used as an ES module that I can export from for testing while maintaining DOM accessibility  on the main Javascript file. I would like to improve on that field. 
 ### Gameplay
 - Add multiplayer mode for collaborative learning.
 - Introduce AI-generated personalized challenges.

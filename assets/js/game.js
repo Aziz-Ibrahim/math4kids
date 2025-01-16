@@ -173,16 +173,3 @@ dialogYes.addEventListener("click", () => {
 dialogNo.addEventListener("click", () => {
     dialog.close(); // Close the dialog
 });
-
-
-// Export functions and variables for Jest testing
-export {
-    toggleDropdown,
-    setMode,
-    generateEquation,
-    handleOptionClick,
-    dropdownButton,
-    dropdownMenu,
-    dropdownItems,
-    currentMode,
-};

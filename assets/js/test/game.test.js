@@ -2,7 +2,7 @@ import {
     toggleDropdown,
     generateEquation,
     setMode
-} from './game';
+} from './gameModule';
 
 test('toggleDropdown toggles the open class on the menu', () => {
     const menu = document.createElement('div');
