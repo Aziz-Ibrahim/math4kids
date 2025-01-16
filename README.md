@@ -139,7 +139,8 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 |------------------------------|--------------------------------------|------------------------------|--------|
 | Navigation Links             | Click each link                     | Navigate to correct section  | Pass   |
 | Game Mode Functionality      | Select and complete a game mode     | Works as intended            | Pass   |
-| Progress Tracking Updates    | Play and check progress graphs      | Reflects new data            | Pass   |
+| JS Functions                 | Test dropdown menu, equation generation, and option click logic | Functions as expected         | Pass   |
+
 
 ---
 
