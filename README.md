@@ -106,7 +106,7 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 #### Home Page
 ![Home page large](docs/m4k-home-lg.png) ![Home page medium](docs/m4k-home-md.png) ![Home page small](docs/m4k-home-sm.png)
 
-![Game page large](docs/m4k-home-lg.png) ![Game page medium](docs/m4k-game-md.png) ![Game page small](docs/m4k-game-sm.png)
+![Game page large](docs/m4k-game-lg.png) ![Game page medium](docs/m4k-game-md.png) ![Game page small](docs/m4k-game-sm.png)
 
 
 ---
