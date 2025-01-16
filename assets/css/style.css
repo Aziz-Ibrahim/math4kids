@@ -480,7 +480,7 @@ dialog::backdrop {
 
     .equation {
         justify-self: center;
-        font-size: 2rem;
+        font-size: 2rem !important;
         width: 80%;
     }
 
