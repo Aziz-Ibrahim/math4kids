@@ -170,7 +170,7 @@ test('toggleDropdown toggles the open class on the menu', () => {
 - Ensure that equations generated in different modes are correct:
 
 ```javascript
-import { generateEquation } from './gameLogic';
+import { generateEquation } from './game';
 
 test('generateEquation produces valid addition results', () => {
     const { num1, num2, answer, operator } = generateEquation('addition');
@@ -190,7 +190,7 @@ test('generateEquation ensures no division by zero', () => {
 - Validate the behavior when a correct or incorrect answer is chosen:
 
 ```javascript
-import { handleOptionClick } from './gameLogic';
+import { handleOptionClick } from './game';
 
 test('handleOptionClick returns true for correct answers', () => {
     const mockOption = { querySelector: () => ({ textContent: '5' }) };
