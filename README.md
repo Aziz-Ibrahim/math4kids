@@ -215,10 +215,7 @@ test('handleOptionClick returns false for incorrect answers', () => {
 
 ### Deployment to GitHub Pages
 
-1. Navigate to the repository on GitHub.
-2. Go to **Settings** > **Pages**.
-3. Select the **Main** branch and save.
-4. The site will be deployed, and a link will be provided.
+- The project was deployed to [GitHub Pages](https://pages.github.com/), a live version of the website can be found [here](https://aziz-ibrahim.github.io/math4kids/index.html)
 
 ### Local Deployment
 
