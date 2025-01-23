@@ -453,9 +453,6 @@ dialog::backdrop {
 
 
 /* Media queries for responsive design */
-/* Media Query for Extra-Large Monitors */
-@media screen and (min-width: 1920px) {}
-
 
 /* Tablet: Screens between 768px and 1024px */
 @media (max-width: 1024px) and (min-width: 768px) {

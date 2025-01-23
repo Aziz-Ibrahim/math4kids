@@ -253,7 +253,7 @@ test('handleOptionClick returns false for incorrect answers', () => {
 - At the time of creating this project, I wasn't very confident in testing with Jest, so I created a replica of my game.js file to be used as an ES module that I can export from for testing while maintaining DOM accessibility  on the main Javascript file. I would like to improve on that field. 
 ### Gameplay
 - Add multiplayer mode for collaborative learning.
-- Introduce AI-generated personalized challenges by fetching an api fron [Open AI](https://platform.openai.com/docs/overview).
+- Introduce AI-generated personalized challenges by fetching an api from [Open AI](https://platform.openai.com/docs/overview).
 - Expand problem types to include fractions and geometry.
 
 ### Progress Tracking
