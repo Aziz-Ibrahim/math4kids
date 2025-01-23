@@ -157,9 +157,9 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 |------------------------------|----------------------------------------------------------|---------------------------------------------------------------------------------|--------|
 | Navigation Links             | 1. Click on each navigation link in the header.          | The page navigates to the correct section without errors.                       | Pass   |
 | Game Mode Functionality      | 1. Select a game mode from the dropdown. <br>2. Complete a round of the selected game mode. | The game functions correctly and responds appropriately to inputs.              | Pass   |
-| Shake Class Animation        | 1. Start the game. <br>2. Select an incorrect answer.    | The equation display briefly "shakes" to indicate the incorrect selection.      | Pass   |
-| Correct Class Addition       | 1. Start the game. <br>2. Select a correct answer.       | The selected answer changes style (e.g., green background) to confirm correctness. | Pass   |
-| New Equation Generation      | 1. Start the game. <br>2. Answer the first question correctly. <br>3. Check the equation display. | A new equation is displayed immediately with different numbers and operators.    | Pass   |
+| Wrong answer Shake Animation        | 1. Start the game. <br>2. Select an incorrect answer.    | The equation display briefly "shakes" to indicate the incorrect selection.      | Pass   |
+| Correct Answer green background       | 1. Start the game. <br>2. Select a correct answer.       | The selected answer changes style (e.g., green background) to confirm correctness. | Pass   |
+| New Equation Generation      | 1. Start the game. <br>2. Answer the first question correctly. <br>3. Check the equation display. | A new equation is displayed immediately with different numbers.    | Pass   |
 | Score Incrementation         | 1. Start the game and note the initial score (0). <br>2. Answer a question correctly. <br>3. Observe the score display. | The score increments by 1 for each correct answer and reflects your performance. | Pass   |
 
 
