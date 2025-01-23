@@ -79,6 +79,10 @@ footer a {
     color: #fff;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 /* Home */
 
@@ -113,6 +117,12 @@ footer a {
     background-color: #AB1221;
     border-radius: 10px;
     padding: 10px 20px;
+}
+
+#hero a:hover {
+    background-color: #fff;
+    color: #AB1221;
+    border: #AB1221 1px solid;
 }
 
 
