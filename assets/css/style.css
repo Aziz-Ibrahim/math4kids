@@ -95,10 +95,11 @@ footer a {
 
 .hero-container {
     background-color: rgba(255, 255, 255, 0.4);
-    padding-top: 60px;
     border-radius: 10px;
     height: 100%;
     width: 100%;
+    margin-top: calc(60px + 200px);
+    padding-top: 0;
 }
 
 .hero-text {
@@ -443,14 +444,7 @@ dialog::backdrop {
 
 /* Media queries for responsive design */
 /* Media Query for Extra-Large Monitors */
-@media screen and (min-width: 1920px) {
-    main {
-        margin-top: calc(60px + 100px);
-        /* nav height + header height */
-        padding-top: 0;
-        /* Remove any default top padding */
-    }
-}
+@media screen and (min-width: 1920px) {}
 
 
 /* Tablet: Screens between 768px and 1024px */
@@ -482,6 +476,11 @@ dialog::backdrop {
 
 /* Mobile: Screens below 768px */
 @media (max-width: 767px) {
+
+    /* Nav */
+    nav h2 {
+        font-size: 1.5rem;
+    }
 
     /* Home page */
     .hero-text {
