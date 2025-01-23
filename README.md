@@ -1,6 +1,6 @@
-# Math4Kids
+# [Math4Kids](https://aziz-ibrahim.github.io/math4kids/index.html)
 
-Math4Kids is a fun, interactive educational platform designed to help children strengthen their mathematical skills through engaging activities and exercises. The application is tailored to promote learning in a playful and stress-free environment, making math enjoyable for kids of all ages.
+[Math4Kids](https://aziz-ibrahim.github.io/math4kids/index.html) is a fun, interactive educational platform designed to help children strengthen their mathematical skills through engaging activities and exercises. The application is tailored to promote learning in a playful and stress-free environment, making math enjoyable for kids of all ages.
 
 ---
 
@@ -155,10 +155,10 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 
 | Test Case                    | Steps                                                     | Expected Result                                                                 | Status |
 |------------------------------|----------------------------------------------------------|---------------------------------------------------------------------------------|--------|
-| Navigation Links             | 1. Click on each navigation link in the header.          | The page navigates to the correct section without errors.                       | Pass   |
+| Navigation Links             | 1. Click on each navigation link in the header.          | The page navigates to the correct page without errors.                       | Pass   |
 | Game Mode Functionality      | 1. Select a game mode from the dropdown. <br>2. Complete a round of the selected game mode. | The game functions correctly and responds appropriately to inputs.              | Pass   |
 | Wrong answer Shake Animation        | 1. Start the game. <br>2. Select an incorrect answer.    | The equation display briefly "shakes" to indicate the incorrect selection.      | Pass   |
-| Correct Answer green background       | 1. Start the game. <br>2. Select a correct answer.       | The selected answer changes style (e.g., green background) to confirm correctness. | Pass   |
+| Correct Answer green background       | 1. Start the game. <br>2. Select a correct answer.       | The selected answer changes style (green background) to confirm correct answer. | Pass   |
 | New Equation Generation      | 1. Start the game. <br>2. Answer the first question correctly. <br>3. Check the equation display. | A new equation is displayed immediately with different numbers.    | Pass   |
 | Score Incrementation         | 1. Start the game and note the initial score (0). <br>2. Answer a question correctly. <br>3. Observe the score display. | The score increments by 1 for each correct answer and reflects your performance. | Pass   |
 
@@ -253,18 +253,18 @@ test('handleOptionClick returns false for incorrect answers', () => {
 - At the time of creating this project, I wasn't very confident in testing with Jest, so I created a replica of my game.js file to be used as an ES module that I can export from for testing while maintaining DOM accessibility  on the main Javascript file. I would like to improve on that field. 
 ### Gameplay
 - Add multiplayer mode for collaborative learning.
-- Introduce AI-generated personalized challenges.
+- Introduce AI-generated personalized challenges by fetching an api fron [Open AI](https://platform.openai.com/docs/overview).
 - Expand problem types to include fractions and geometry.
 
 ### Progress Tracking
 
-- Scores and Badges**: Visual indicators of achievements.
-- Performance Graphs**: Weekly and monthly progress reports.
+- **Scores and Badges**: Visual indicators of achievements.
+- **Performance Graphs**: Weekly and monthly progress reports.
 
 ### Settings
 
-- Customization**: Options to select difficulty levels, themes, and problem types.
-- Parent Controls**: Manage access and monitor activities.
+- **Customization**: Options to select difficulty levels, themes, and problem types.
+- **Parent Controls**: Manage access and monitor activities.
 ---
 ## Credits
 
@@ -288,6 +288,6 @@ test('handleOptionClick returns false for incorrect answers', () => {
 ---
 
 ## Acknowledgments
-- [Iuliia Konovalove](https://github.com/IuliiaKonovalova): For feedback and improvement ideas.
+- **[Iuliia Konovalove](https://github.com/IuliiaKonovalova)**: For feedback and improvement insights.
 - **Family and Friends**: For feedback and testing.
 - **Online Communities**: Resources and tutorials for inspiration.

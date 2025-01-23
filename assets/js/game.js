@@ -139,7 +139,7 @@ function handleOptionClick(selectedOption) {
         setTimeout(() => {
             equationDiv.classList.remove("correct");
             generateEquation(currentMode);
-        }, 600);
+        }, 1000);
     } else {
         selectedOption.classList.add("shake");
         selectedOption.addEventListener('animationend', () => {
