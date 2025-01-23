@@ -87,6 +87,15 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 - **HTML**: Structure and layout.
 - **CSS**: Styling and responsiveness.
 - **JavaScript**: Interactive features and logic.
+- **[Jest](https://jestjs.io/)**: Javascript testing.
+- **[VS Code](https://code.visualstudio.com/)**: for development and Jest package installation.
+- **[GitHub](https://github.com/)**: for storing the code.
+- **[GitHub Pages](https://github.com/skills/github-pages)**: for web deployment.
+- **[W3C Markup Validation Service](https://validator.w3.org/)**: for checking HTML structure.
+- **[CSS Validation Services](https://jigsaw.w3.org/css-validator/)**: for testing CSS code.
+- **[Lighthouse](https://developers.google.com/web/tools/lighthouse)**: for performance and accessibility checks.
+- **[WireframeCC](https://wireframe.cc/)**: for creating wireframes.
+- **[Image Resizer](https://imageresizer.com/)**: for sizing hero image.
 
 ---
 
@@ -132,9 +141,13 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 ![Game page Lighthouse test](docs/game-page-lighthouse-check.png)
 - Verified contrast ratios and alternative text for images.
 ![Contrast check](docs/webaim-contrast-check.png)
+- HTML markup validation.
 ![Home page HTML validation](docs/home-page-html-validation.png)
 ![Game page HTML validation](docs/game-page-html-validation.png)
+- CSS validation.
 ![CSS validation](docs/css-validation.png)
+- Javascript testing in JSHint.
+![JSHint test for game.js](docs/jshint-report.png)
 
 ---
 
@@ -149,7 +162,7 @@ Math4Kids is a fun, interactive educational platform designed to help children s
 
 ### Jest Unit Testing
 
-The following Jest tests were created to ensure the correctness of key functions:
+The following Jest tests were created to ensure the correctness of key functions, more detailes on jest testing can be found [here](assets/js/test/game.test.js)
 
 #### 1. **Dropdown Menu Tests**
 
