@@ -29,8 +29,8 @@ nav {
     z-index: 1000;
 }
 
-nav h1 {
-    font-size: 1.5rem;
+nav h2 {
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -442,6 +442,17 @@ dialog::backdrop {
 
 
 /* Media queries for responsive design */
+/* Media Query for Extra-Large Monitors */
+@media screen and (min-width: 1920px) {
+    main {
+        margin-top: calc(60px + 100px);
+        /* nav height + header height */
+        padding-top: 0;
+        /* Remove any default top padding */
+    }
+}
+
+
 /* Tablet: Screens between 768px and 1024px */
 @media (max-width: 1024px) and (min-width: 768px) {
     #game-mode-container {
