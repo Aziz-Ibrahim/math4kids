@@ -89,6 +89,7 @@ footer a:hover {
 #hero {
     background-image: url('../images/hero-bg-img-sm.jpg');
     background-size: cover;
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,8 +103,7 @@ footer a:hover {
     border-radius: 10px;
     height: 100%;
     width: 100%;
-    margin-top: calc(60px + 200px);
-    padding-top: 0;
+    padding-top: calc(60px + 200px);
 }
 
 .hero-text {
