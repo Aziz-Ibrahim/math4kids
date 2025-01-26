@@ -300,12 +300,16 @@ footer a:hover {
     left: 10px;
     background-color: #fff;
     padding: 10px 20px;
-    border: 2px solid #662E9B;
+    border: 2px solid #F9C80E;
     border-radius: 5px;
     font-size: 1rem;
     color: #F86624;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 999;
+}
+
+#live-score {
+    color: #662E9B;
 }
 
 
@@ -568,10 +572,17 @@ dialog::backdrop {
     }
 
     /* Equation section */
+    #score-container {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
     .equation {
         justify-self: center;
         font-size: 2rem !important;
         width: 80%;
+        height: 150%;
     }
 
     .equation p {
