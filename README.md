@@ -14,8 +14,7 @@
 2. [Features](#features)
    - [Homepage](#homepage)
    - [Game Modes](#game-modes)
-   - [Progress Tracking](#progress-tracking)
-   - [Settings](#settings)
+   - [Score Tracking](#score-tracking)
 
 3. [Technologies Used](#technologies-used)
 
@@ -24,24 +23,27 @@
    - [Typography](#typography)
    - [Wireframes](#wireframes)
 
-5. [Testing](#testing)
+5. [JavaScript Features](#description-of-javascript-features)
+
+6. [Testing](#testing)
    - [Cross-Browser Compatibility](#cross-browser-compatibility)
    - [Responsive Design Testing](#responsive-design-testing)
    - [Accessibility Testing](#accessibility-testing)
    - [Manual Testing](#manual-testing)
+   - [Jest Unit Testing](#jest-unit-testing)
 
-6. [Deployment](#deployment)
+7. [Deployment](#deployment)
    - [Deployment to GitHub Pages](#deployment-to-github-pages)
    - [Local Deployment](#local-deployment)
 
-7. [Future Improvements](#future-improvements)
+8. [Future Improvements](#future-improvements)
 
-8. [Credits](#credits)
+9. [Credits](#credits)
    - [Content](#content)
    - [Media](#media)
    - [Tools](#tools)
 
-9. [Acknowledgments](#acknowledgments)
+10. [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -80,6 +82,10 @@
 - Division.
 ![Desktop play](docs/m4k-desktop-play.png) ![Tablet play](docs/m4k-tablet-play.png) ![Mobile play](docs/m4k-mobile-play.png)
 
+### Score Tracking
+
+- **Real-Time Score Display**: The user’s score updates in real time for every correct answer.
+- **Encourages Engagement**: A visual representation of performance motivates users to achieve higher scores.
 ---
 
 ## Technologies Used
@@ -119,6 +125,38 @@
 
 ![Game page large](docs/m4k-game-lg.png) ![Game page medium](docs/m4k-game-md.png) ![Game page small](docs/m4k-game-sm.png)
 
+---
+
+## Description of JavaScript Features
+
+### Core Logic
+
+- **Game Modes**: Handles logic for four modes: addition, subtraction, multiplication, and division.
+- **Randomized Equations**: Generates unique equations for every round and ensures validity (e.g., no division by zero).
+- **Dynamic Options**: Randomizes and displays options (including the correct answer) for every round.
+
+### Score System
+
+- Added a `score` variable to track the user's performance.
+- The score increments on every correct answer and updates the `#score-container` element dynamically.
+
+### Dropdown Menu
+
+- Implemented a custom dropdown for selecting game modes:
+  - Toggling the dropdown menu on button click.
+  - Closing the dropdown when the user chooses an operator or clicks outside the menu.
+
+### Interactive Feedback
+
+- **Correct Answer**: Adds a `correct` class to the equation container, temporarily highlighting the right answer.
+- **Wrong Answer**: Adds a `shake` class to incorrect options, giving visual feedback for wrong selections.
+
+### Exit Confirmation
+
+- Added a confirmation dialog to handle navigation to the home page or restarting the game.
+- Dynamically updates the dialog message based on the user’s action:
+  - **Home Navigation**: Redirects to the home page (`index.html`).
+  - **Game Restart**: Reloads the game page (`game.html`).
 
 ---
 
